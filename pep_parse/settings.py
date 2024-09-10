@@ -18,3 +18,8 @@ FEEDS = {
 ITEM_PIPELINES = {
     'pep_parse.pipelines.PepParsePipeline': ORDER_PEP_PARSE_PIPELINE,
 }
+
+NAME_SPIDER = 'pep'
+
+ALLOWED_DOMAINS = ['peps.python.org']
+START_URLS = ['https://peps.python.org/']
